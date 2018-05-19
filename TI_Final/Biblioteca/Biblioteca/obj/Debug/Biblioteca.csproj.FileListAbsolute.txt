@@ -1,8 +1,0 @@
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.Cache
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb

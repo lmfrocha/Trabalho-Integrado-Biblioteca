@@ -14,7 +14,7 @@ namespace Biblioteca
         private Nodo esquerda = null;
         private int valor_do_no = 0;
 
-        
+
 
         //gets_sets dos atributos da classe Nodo
         internal Nodo Nodo_raiz { get => nodo_raiz; set => nodo_raiz = value; }
