@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Biblioteca"
         mc:Ignorable="d"
-        Title="MainWindow" Height="522" Width="852">
+        Title="MainWindow" Height="522" Width="919">
     <Grid>
-        
+        <Label Content="Relatório de Empréstimos" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="325,40,0,0" Height="27" Width="149"/>
+        <Button Content="Pesquisar" HorizontalAlignment="Left" Margin="361,100,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="350,72,0,0" TextWrapping="Wrap" Text="Nome do Aluno" VerticalAlignment="Top" Width="97"/>
+        <ListView HorizontalAlignment="Left" Height="236" Margin="325,137,0,0" VerticalAlignment="Top" Width="149">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Livros com maior numeros de&#xD;&#xA;             empréstimos" HorizontalAlignment="Left" Margin="709,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="//Será exibida ao iniciar o programa" HorizontalAlignment="Left" Margin="602,390,0,0" VerticalAlignment="Top"/>
+        <Label Content="//Ao pesquisar, irá exibir todos &#xD;&#xA;os livros emprestados para &#xD;&#xA;determinado aluno" HorizontalAlignment="Left" Margin="325,390,0,0" VerticalAlignment="Top" Width="184"/>
+        <ListView HorizontalAlignment="Left" Height="293" Margin="709,80,0,0" VerticalAlignment="Top" Width="181">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Alunos com maior numero de &#xD;&#xA;              empréstimos" HorizontalAlignment="Left" Margin="508,38,0,0" VerticalAlignment="Top"/>
+        <ListView HorizontalAlignment="Left" Height="293" Margin="508,80,0,0" VerticalAlignment="Top" Width="181">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Iniciar" HorizontalAlignment="Left" Margin="78,75,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Iniciar leitura de dados" HorizontalAlignment="Left" Margin="53,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.316,0.538"/>
+        <Label Content="Verificar situação de Aluno:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,195,0,0" Height="27" Width="155"/>
+        <Button Content="Verificar" HorizontalAlignment="Left" Margin="63,227,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="189,200,0,0" TextWrapping="Wrap" Text="Nome do Aluno" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.093"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="34,264,0,0" TextWrapping="Wrap" Text="Suspenso ou Regular" VerticalAlignment="Top" Width="135"/>
+
     </Grid>
 </Window>
