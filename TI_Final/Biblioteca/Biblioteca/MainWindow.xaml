@@ -5,51 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Biblioteca"
         mc:Ignorable="d"
-        Title="MainWindow" Height="522" Width="919">
-    <Grid>
-        <Label Content="Relatório de Empréstimos" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="325,40,0,0" Height="27" Width="149"/>
-        <Button Content="Pesquisar" HorizontalAlignment="Left" Margin="361,100,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="350,72,0,0" TextWrapping="Wrap" Text="Nome do Aluno" VerticalAlignment="Top" Width="97"/>
-        <ListView HorizontalAlignment="Left" Height="236" Margin="325,137,0,0" VerticalAlignment="Top" Width="149">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Label Content="Livros com maior numeros de&#xD;&#xA;             empréstimos" HorizontalAlignment="Left" Margin="709,38,0,0" VerticalAlignment="Top"/>
-        <Label Content="//Será exibida ao iniciar o programa" HorizontalAlignment="Left" Margin="602,390,0,0" VerticalAlignment="Top"/>
-        <Label Content="//Ao pesquisar, irá exibir todos &#xD;&#xA;os livros emprestados para &#xD;&#xA;determinado aluno" HorizontalAlignment="Left" Margin="325,390,0,0" VerticalAlignment="Top" Width="184"/>
-        <ListView HorizontalAlignment="Left" Height="293" Margin="709,80,0,0" VerticalAlignment="Top" Width="181">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Label Content="Alunos com maior numero de &#xD;&#xA;              empréstimos" HorizontalAlignment="Left" Margin="508,38,0,0" VerticalAlignment="Top"/>
-        <ListView HorizontalAlignment="Left" Height="293" Margin="508,80,0,0" VerticalAlignment="Top" Width="181">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Button Content="Iniciar" HorizontalAlignment="Left" Margin="78,75,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label Content="Iniciar leitura de dados" HorizontalAlignment="Left" Margin="53,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.316,0.538"/>
-        <Label Content="Verificar situação de Aluno:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,195,0,0" Height="27" Width="155"/>
-        <Button Content="Verificar" HorizontalAlignment="Left" Margin="63,227,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="189,200,0,0" TextWrapping="Wrap" Text="Nome do Aluno" VerticalAlignment="Top" Width="97" RenderTransformOrigin="0.5,0.5">
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.093"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <TextBlock HorizontalAlignment="Left" Margin="34,264,0,0" TextWrapping="Wrap" Text="Suspenso ou Regular" VerticalAlignment="Top" Width="135"/>
+        Title="MainWindow" Height="424.5" Width="901.725" Background="#eee">
+    <Grid Background="#eee" HorizontalAlignment="Left" Width="902" Margin="0,0,0,-21">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="129*"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Left" Height="360" Margin="466,0,0,0" VerticalAlignment="Top" Width="404" Background="White" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="31*"/>
+                <RowDefinition Height="179*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Livros com maior numeros de&#xA;             empréstimos" Margin="217,10,10,0" VerticalAlignment="Top" FontWeight="Bold" Height="42" />
+            <Label Content="Alunos com maior numero de &#xA;              empréstimos" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="42" Width="181" />
+            <DataGrid HorizontalAlignment="Left" Margin="10,10,0,10" Width="181" Grid.Row="1"/>
+            <DataGrid HorizontalAlignment="Left" Height="284" Margin="213,13,0,0" VerticalAlignment="Top" Width="181" Grid.Row="1"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="360" Margin="240,0,0,0" VerticalAlignment="Top" Width="201" Background="White" Grid.Row="1">
+            <Label Content="Relatório de Empréstimos" VerticalAlignment="Top" Margin="26,17,26,0" Height="27" FontWeight="Bold" />
+            <Button Content="Pesquisar" Margin="31,88,31,0" VerticalAlignment="Top"/>
+            <TextBox Height="23" Margin="52,52,52,0" TextWrapping="Wrap" Text="Nome do Aluno" VerticalAlignment="Top"/>
+            <DataGrid HorizontalAlignment="Left" Height="225" Margin="10,125,0,0" VerticalAlignment="Top" Width="181"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="248" VerticalAlignment="Top" Width="201" Margin="19,112,0,0" Background="White" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="101*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Verificar situação de Aluno" VerticalAlignment="Top" Margin="21,19,20,0" Height="27" FontWeight="Bold" Grid.ColumnSpan="2" />
+            <Button Content="Verificar" Margin="31,90,31,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            <TextBox Height="23" Margin="31,55,31,0" TextWrapping="Wrap" Text="Nome do Aluno" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.093"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+            <TextBlock HorizontalAlignment="Left" Margin="33,141,0,0" TextWrapping="Wrap" Text="Suspenso ou Regular" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" FontWeight="ExtraBold"/>
+        </Grid>
+        <Grid Height="86" Margin="19,0,682,0" VerticalAlignment="Top" Background="White" Grid.Row="1" >
+            <Button Content="Iniciar" Margin="31,43,31,0" VerticalAlignment="Top" Height="21"/>
+            <Label Content="Iniciar leitura de dados" Margin="31,10,31,0" VerticalAlignment="Top" RenderTransformOrigin="-3.316,0.538" FontWeight="Bold" Height="28" />
+        </Grid>
 
     </Grid>
 </Window>
