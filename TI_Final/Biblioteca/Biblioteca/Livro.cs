@@ -6,30 +6,57 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    class Livro
+    abstract class Livro
     {
-        private string nome_livro;
-        private string nome_autor;
-        private string editora;
-        private int edicao_livro;
-        private DateTime ano;
-        private int codigo_livro;
+        //Atributos dos Livros
+        private int codigo;
+        private string nome;
+        private int tipo;
+        private double precoP;
 
-        public string Nome_livro { get => nome_livro; set => nome_livro = value; }
-        public string Nome_autor { get => nome_autor; set => nome_autor = value; }
-        public string Editora { get => editora; set => editora = value; }
-        public int Edicao_livro { get => edicao_livro; set => edicao_livro = value; }
-        public DateTime Ano { get => ano; set => ano = value; }
-        public int Codigo_livro { get => codigo_livro; set => codigo_livro = value; }
-
-        private Livro(string nome_livro, string nome_autor, string editora, int edicao_livro, DateTime ano, int condigo_livro)
+        public int Codigo
         {
-            this.nome_livro = Nome_livro;
-            this.nome_autor = Nome_autor;
-            this.editora = Editora;
-            this.edicao_livro = Edicao_livro;
-            this.ano = Ano;
-            this.codigo_livro = Codigo_livro;
+            get
+            {
+                return codigo;
+            }
+            set
+            {
+                codigo = value;
+            }
+        }
+        public string Nome
+        {
+            get
+            {
+                return nome;
+            }
+            set
+            {
+                nome = value;
+            }
+        }
+        public int Tipo
+        {
+            get
+            {
+                return tipo;
+            }
+            set
+            {
+                tipo = value;
+            }
+        }
+        public double PrecoP
+        {
+            get
+            {
+                return precoP;
+            }
+            set
+            {
+                precoP = value;
+            }
         }
     }
 }
