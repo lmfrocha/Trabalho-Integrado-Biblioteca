@@ -35,7 +35,7 @@ namespace Biblioteca
         public void insere(int dado)
         {
             Nodo no_auxiliar;
-            if (quantidade == 0)
+            if(quantidade == 0)
             {
                 // Com a arvore vazia, devemos criar o primeiro nodo, que sera a raiz;
                 no_auxiliar = new Nodo();
@@ -45,9 +45,9 @@ namespace Biblioteca
             {
                 // Localiza o local onde deverá ser inserido o novo nó;
                 no_auxiliar = raiz;
-                while (no_e_externo(no_auxiliar) == false)
+                while(no_e_externo(no_auxiliar) == false)
                 {
-                    if (dado > no_auxiliar.Valor_do_no)
+                    if(dado > no_auxiliar.Valor_do_no)
                     {
                         no_auxiliar = no_auxiliar.Direita;
                     }
@@ -79,8 +79,8 @@ namespace Biblioteca
         //}
 
 
-
-
+        
+        
 
     }
 }
