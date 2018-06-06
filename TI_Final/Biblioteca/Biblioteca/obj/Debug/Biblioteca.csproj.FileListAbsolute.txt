@@ -1,14 +1,10 @@
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\MainWindow.g.cs
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\App.g.cs
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca_MarkupCompile.cache
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca_MarkupCompile.lref
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\MainWindow.baml
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.g.resources
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.Cache
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
-C:\Users\Verinha lucia\Documents\GitHub\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Form1.resources
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb

@@ -8,56 +8,109 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace Biblioteca
 {
     public partial class Form1 : Form
     {
+        Livro[] vetLivros;
+        Usuario[] vetUsuarios;
+        Livro newLivro;
+        Usuario newUsuario;
         public Form1()
         {
             InitializeComponent();
-            Arvore livros;
-            Arvore usuarios;
-            Livro newLivro;
-            Usuario newUsuario;
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                openFileDialog1.ShowDialog();
-                string nomeArq = openFileDialog1.FileName;
-                //DateTime hora = DateTime.Now;
-                if (!File.Exists(nomeArq));
-                StreamReader arqDados = new StreamReader(nomeArq);
+            openFileDialog1.ShowDialog();
+            Stopwatch tempo = new Stopwatch();
+            tempo.Start();
+            string filename = openFileDialog1.FileName;
+            TextReader Leitor = new StreamReader(filename, true);//Inicializa o Leitor
+            int tamanhoVet = 0;
 
-                string linha;
-                string[] dados;
+            while (Leitor.Peek() != -1)
+            {   
+                //Enquanto o arquivo não acabar, o Peek não retorna -1 sendo adequando para o loop while...
+                tamanhoVet++;//Incrementa 1 na contagem
+                Leitor.ReadLine();//Avança uma linha no arquivo
+            }
+            Leitor.Close(); //Fecha o Leitor, dando acesso ao arquivo para outros programas....         
+
+            string nomeArq = openFileDialog1.FileName;            
+            if (!File.Exists(nomeArq));
+            StreamReader arqDados = new StreamReader(nomeArq);
+            string linha;
+            string[] dados;
+            linha = arqDados.ReadLine();
+            vetUsuarios = new Usuario[tamanhoVet];
+            int pos = 0;
+            while (linha != null)
+            {
+                dados = linha.Split(';');
+
+                newUsuario = new Usuario(int.Parse(dados[0]), dados[1]);
+                vetUsuarios[pos] = newUsuario;
+
                 linha = arqDados.ReadLine();
-                //tempo = new Stopwatch();
-                //tempo.Start();
-
-
-                while (linha != null)
-                {
-                    dados = linha.Split(';');
-                    Usuario novoCliente = new Usuario(int.Parse(dados[0]), dados[1]);
-                    MinhaListaCliente.InserirCliente(novoCliente);
-
-                    linha = arqDados.ReadLine();
-                }
-                //tempo.Stop();
-                MessageBox.Show("Arquivo Carregado!" + "em: " + tempo.Elapsed.Seconds + " Segundos");
-                arqDados.Close();
-
+                pos += 1;
             }
+            tempo.Stop();
+            MessageBox.Show("Arquivo Carregado !\n" + tempo.Elapsed.Seconds + " Segundos");
+            arqDados.Close();
+            OrdenaUsuario.quickSort(vetUsuarios);
+            MessageBox.Show("Vetor ordenado");
 
-            catch (FormatException ex)
+            
+            
+        }
+        
+        private void btnCarregarLivros_Click(object sender, EventArgs e)
+        {
+            openFileDialog2.ShowDialog();
+            Stopwatch tempo = new Stopwatch();
+            tempo.Start();
+            string filename = openFileDialog2.FileName;
+            TextReader Leitor = new StreamReader(filename, true);//Inicializa o Leitor
+            int tamanhoVet = 0;
+
+            while (Leitor.Peek() != -1)
             {
-                MessageBox.Show("Arquivo corrompido");
+                //Enquanto o arquivo não acabar, o Peek não retorna -1 sendo adequando para o loop while...
+                tamanhoVet++;//Incrementa 1 na contagem
+                Leitor.ReadLine();//Avança uma linha no arquivo
             }
+            Leitor.Close(); //Fecha o Leitor, dando acesso ao arquivo para outros programas....         
 
+            string nomeArq = openFileDialog2.FileName;
+            if (!File.Exists(nomeArq)) ;
+            StreamReader arqDados = new StreamReader(nomeArq);
+            string linha;
+            string[] dados;
+            linha = arqDados.ReadLine();
+            vetLivros = new Livro[tamanhoVet];
+            int pos = 0;
+            while (linha != null)
+            {
+                dados = linha.Split(';');
+
+                //int codigo, string nome, int tipo, float preco_por_pagina
+                newLivro = new Livro(int.Parse(dados[0]), dados[1],int.Parse(dados[2]),float.Parse(dados[3]));
+                vetLivros[pos] = newLivro;
+
+                linha = arqDados.ReadLine();
+                pos += 1;
+            }
+            tempo.Stop();
+            MessageBox.Show("Arquivo Carregado !\n" + tempo.Elapsed.Seconds + " Segundos");
+            arqDados.Close();
+            OrdenaLivro.quickSort(vetLivros);
+            MessageBox.Show("Vetor ordenado");
+
+            
         }
     }
 }

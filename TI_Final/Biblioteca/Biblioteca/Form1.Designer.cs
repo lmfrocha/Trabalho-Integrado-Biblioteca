@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCarregaUsuario = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnCarregarLivros = new System.Windows.Forms.Button();
             this.btnCarregarEmprestimo = new System.Windows.Forms.Button();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(163, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
             // 
             // btnCarregaUsuario
             // 
@@ -64,6 +57,7 @@
             this.btnCarregarLivros.TabIndex = 2;
             this.btnCarregarLivros.Text = "Carregar Livros";
             this.btnCarregarLivros.UseVisualStyleBackColor = true;
+            this.btnCarregarLivros.Click += new System.EventHandler(this.btnCarregarLivros_Click);
             // 
             // btnCarregarEmprestimo
             // 
@@ -74,6 +68,10 @@
             this.btnCarregarEmprestimo.Text = "Carregar Emprestimos";
             this.btnCarregarEmprestimo.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -82,21 +80,18 @@
             this.Controls.Add(this.btnCarregarEmprestimo);
             this.Controls.Add(this.btnCarregarLivros);
             this.Controls.Add(this.btnCarregaUsuario);
-            this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnCarregaUsuario;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button btnCarregarLivros;
         private System.Windows.Forms.Button btnCarregarEmprestimo;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
     }
 }
 
