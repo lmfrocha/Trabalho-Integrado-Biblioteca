@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnCarregaUsuario = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnCarregarLivros = new System.Windows.Forms.Button();
@@ -47,7 +48,7 @@
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Tag = "Nome do Arquivo";
             // 
             // btnCarregarLivros
             // 
@@ -80,8 +81,9 @@
             this.Controls.Add(this.btnCarregarEmprestimo);
             this.Controls.Add(this.btnCarregarLivros);
             this.Controls.Add(this.btnCarregaUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "AED - Biblioteca - Daniel - Leandro - Lucas - Victor";
             this.ResumeLayout(false);
 
         }
