@@ -26,24 +26,7 @@ namespace Biblioteca
         public int Tipo { get => tipo; set => tipo = value; }
         public float Preco_por_pagina { get => preco_por_pagina; set => preco_por_pagina = value; }
 
-        private static Livro BinarySearch(int codigoL, Livro [] vetor, int ini, int fim)
-        {
-            if (ini > fim) return null;
-            int meio = (ini + fim) / 2;
-            if (vetor[meio].Codigo == codigoL) return vetor[meio];
-            else if (codigoL > vetor[meio].Codigo) return BinarySearch(codigoL, vetor, (meio + 1), fim);
-            else return BinarySearch(codigoL, vetor, ini, (meio - 1));
-        }
-        public bool Pesquisa(int CodigoLivro, Livro[] vetorDeLivro)
-        {
-            int inicio = 0; int fim = vetorDeLivro.Length;
-
-            if (BinarySearch(CodigoLivro, vetorDeLivro, inicio, fim) != null)
-            {
-                return true;
-            }
-            else return false;            
-        }
+        
         public Boolean Equals(Dados other)
         {
             Livro aux = (Livro)(other);

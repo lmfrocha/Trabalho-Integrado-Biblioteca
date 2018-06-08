@@ -74,10 +74,16 @@ namespace Biblioteca
                 
             }
 
-            
-            
+            if (PesquisaObjeto.PesquisaUsuario(5214, vetUsuarios))
+            {
+                MessageBox.Show("Achou");
+
+            }
+            else MessageBox.Show("Erro, tente novamente");
+
+
         }
-        
+
         private void btnCarregarLivros_Click(object sender, EventArgs e)
         {
             try

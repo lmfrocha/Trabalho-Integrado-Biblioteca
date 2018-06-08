@@ -21,28 +21,6 @@ namespace Biblioteca
         public string Nome { get => nome; set => nome = value; }
 
 
-        private static Usuario BinarySearch(int codigoL, Usuario[] vetor, int ini, int fim)
-        {
-            if (ini > fim) return null;
-            int meio = (ini + fim) / 2;
-            if (vetor[meio].Codigo == codigoL) return vetor[meio];
-            else if (codigoL > vetor[meio].Codigo) return BinarySearch(codigoL, vetor, (meio + 1), fim);
-            else return BinarySearch(codigoL, vetor, ini, (meio - 1));
-        }
-
-        public bool Pesquisa(int CodigoLivro, Usuario[] vetorDeUsuario)
-        {
-            int inicio = 0; int fim = vetorDeUsuario.Length;
-
-            if (BinarySearch(CodigoLivro, vetorDeUsuario, inicio, fim) != null)
-            {
-                return true;
-            }
-            else return false;
-
-        }
-
-
 
         public Boolean Equals(Dados other)
         {
