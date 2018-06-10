@@ -34,11 +34,12 @@
             this.btnCarregarLivros = new System.Windows.Forms.Button();
             this.btnCarregarEmprestimo = new System.Windows.Forms.Button();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // btnCarregaUsuario
             // 
-            this.btnCarregaUsuario.Location = new System.Drawing.Point(347, 114);
+            this.btnCarregaUsuario.Location = new System.Drawing.Point(662, 185);
             this.btnCarregaUsuario.Name = "btnCarregaUsuario";
             this.btnCarregaUsuario.Size = new System.Drawing.Size(82, 39);
             this.btnCarregaUsuario.TabIndex = 1;
@@ -52,7 +53,7 @@
             // 
             // btnCarregarLivros
             // 
-            this.btnCarregarLivros.Location = new System.Drawing.Point(347, 159);
+            this.btnCarregarLivros.Location = new System.Drawing.Point(662, 230);
             this.btnCarregarLivros.Name = "btnCarregarLivros";
             this.btnCarregarLivros.Size = new System.Drawing.Size(82, 39);
             this.btnCarregarLivros.TabIndex = 2;
@@ -62,16 +63,21 @@
             // 
             // btnCarregarEmprestimo
             // 
-            this.btnCarregarEmprestimo.Location = new System.Drawing.Point(347, 204);
+            this.btnCarregarEmprestimo.Location = new System.Drawing.Point(662, 275);
             this.btnCarregarEmprestimo.Name = "btnCarregarEmprestimo";
             this.btnCarregarEmprestimo.Size = new System.Drawing.Size(82, 39);
             this.btnCarregarEmprestimo.TabIndex = 3;
             this.btnCarregarEmprestimo.Text = "Carregar Emprestimos";
             this.btnCarregarEmprestimo.UseVisualStyleBackColor = true;
+            this.btnCarregarEmprestimo.Click += new System.EventHandler(this.btnCarregarEmprestimo_Click);
             // 
             // openFileDialog2
             // 
-            this.openFileDialog2.FileName = "openFileDialog1";
+            this.openFileDialog2.Tag = "Nome do Arquivo";
+            // 
+            // openFileDialog3
+            // 
+            this.openFileDialog3.Tag = "Nome do Arquivo";
             // 
             // Form1
             // 
@@ -94,6 +100,7 @@
         private System.Windows.Forms.Button btnCarregarLivros;
         private System.Windows.Forms.Button btnCarregarEmprestimo;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog3;
     }
 }
 

@@ -17,16 +17,16 @@ namespace Biblioteca
             else return BinarySearch(codigoL, vetor, ini, (meio - 1));
         }
 
-        public static bool PesquisaUsuario(int CodigoLivro, Usuario[] vetorDeUsuario)
+        public static Usuario PesquisaUsuario(int CodigoLivro, Usuario[] vetorDeUsuario)
         {
             int inicio = 0; int fim = vetorDeUsuario.Length;
 
-            if (BinarySearch(CodigoLivro, vetorDeUsuario, inicio, fim) != null)
+            Usuario aux = BinarySearch(CodigoLivro, vetorDeUsuario, inicio, fim);
+            if (aux != null)
             {
-                return true;
+                return aux;
             }
-            else return false;
-
+            else return null;
         }
 
         private static Livro BinarySearch(int codigoL, Livro[] vetor, int ini, int fim)
@@ -37,15 +37,16 @@ namespace Biblioteca
             else if (codigoL > vetor[meio].Codigo) return BinarySearch(codigoL, vetor, (meio + 1), fim);
             else return BinarySearch(codigoL, vetor, ini, (meio - 1));
         }
-        public static bool PesquisaLivro(int CodigoLivro, Livro[] vetorDeLivro)
+        public static Livro PesquisaLivro(int CodigoLivro, Livro[] vetorDeLivro)
         {
-            int inicio = 0; int fim = vetorDeLivro.Length;
+            int inicio = 0; int fim = vetorDeLivro.Length;            
 
-            if (BinarySearch(CodigoLivro, vetorDeLivro, inicio, fim) != null)
+            Livro aux = BinarySearch(CodigoLivro, vetorDeLivro, inicio, fim);
+            if (aux != null)
             {
-                return true;
+                return aux;
             }
-            else return false;
+            else return null;
         }
 
 
