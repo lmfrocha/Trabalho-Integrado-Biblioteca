@@ -99,7 +99,6 @@ namespace Biblioteca
                     tamanhoVet++;//Incrementa 1 na contagem
                     Leitor.ReadLine();//Avança uma linha no arquivo
                 }
-
                 Leitor.Close(); //Fecha o Leitor, dando acesso ao arquivo para outros programas....         
 
                 string nomeArq = openFileDialog2.FileName;
@@ -108,15 +107,14 @@ namespace Biblioteca
                 string linha;
                 string[] dados;
                 linha = arqDados.ReadLine();
-                vetEmprestimo = new Emprestimo[tamanhoVet];
+                vetLivros = new Livro [tamanhoVet];
                 int pos = 0;
-
                 while (linha != null)
                 {
                     dados = linha.Split(';');
-                    //int codigo, string nome, int tipo, float preco_por_pagina
-                    newLivro = new Livro(int.Parse(dados[0]), dados[1], int.Parse(dados[2]), float.Parse(dados[3]));
+                    newLivro = new Livro (int.Parse(dados[0]), dados[1],int.Parse(dados[2]),float.Parse(dados[3]));
                     vetLivros[pos] = newLivro;
+
                     linha = arqDados.ReadLine();
                     pos += 1;
                 }
@@ -166,18 +164,24 @@ namespace Biblioteca
                 while (linha != null)
                 {
                     dados = linha.Split(';');
-
+                    
+                    
+                    //Aqui o newUsuario pega o usuário sendo pesquisado por código lá no vetor dele passado por REF
                     newUsuario = PesquisaObjeto.PesquisaUsuario(int.Parse(dados[0]), vetUsuarios);
+
+                    //Aqui o newLivro pega o Livro sendo pesquisado por código lá no vetor dele passado por REF
                     newLivro = PesquisaObjeto.PesquisaLivro(int.Parse(dados[1]), vetLivros);
 
                     //int codigo, string nome, int tipo, float preco_por_pagina
+                    //O emprestimo é criado utilizando a referencia do livro pesquisado.... então o que acontece...
+                    //não preciso criar um "novo" livro ou usuario... e sim referenciar onde eles estão na memoria
                     newEmprestimo = new Emprestimo(ref newLivro,ref newUsuario,int.Parse(dados[2]),DateTime.Parse(dados[3]));
                     vetEmprestimo[pos] = newEmprestimo;
                     linha = arqDados.ReadLine();
                     pos += 1;
                 }
                 tempo.Stop();
-                //MessageBox.Show("Arquivo Carregado !\n" + tempo.Elapsed.Seconds + " Segundos");
+                MessageBox.Show("Arquivo Carregado !\n" + tempo.Elapsed.Seconds + " Segundos");
                 arqDados.Close();
                 //OrdenaLivro.quickSort(vetLivros);
                 //MessageBox.Show("Vetor ordenado");
