@@ -39,7 +39,7 @@
             // 
             // btnCarregaUsuario
             // 
-            this.btnCarregaUsuario.Location = new System.Drawing.Point(662, 185);
+            this.btnCarregaUsuario.Location = new System.Drawing.Point(184, 21);
             this.btnCarregaUsuario.Name = "btnCarregaUsuario";
             this.btnCarregaUsuario.Size = new System.Drawing.Size(82, 39);
             this.btnCarregaUsuario.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // btnCarregarLivros
             // 
-            this.btnCarregarLivros.Location = new System.Drawing.Point(662, 230);
+            this.btnCarregarLivros.Location = new System.Drawing.Point(184, 66);
             this.btnCarregarLivros.Name = "btnCarregarLivros";
             this.btnCarregarLivros.Size = new System.Drawing.Size(82, 39);
             this.btnCarregarLivros.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             // btnCarregarEmprestimo
             // 
-            this.btnCarregarEmprestimo.Location = new System.Drawing.Point(662, 275);
+            this.btnCarregarEmprestimo.Location = new System.Drawing.Point(184, 111);
             this.btnCarregarEmprestimo.Name = "btnCarregarEmprestimo";
             this.btnCarregarEmprestimo.Size = new System.Drawing.Size(82, 39);
             this.btnCarregarEmprestimo.TabIndex = 3;
@@ -83,13 +83,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(457, 179);
             this.Controls.Add(this.btnCarregarEmprestimo);
             this.Controls.Add(this.btnCarregarLivros);
             this.Controls.Add(this.btnCarregaUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "AED - Biblioteca - Daniel - Leandro - Lucas - Victor";
+            this.Text = "AED - Biblioteca - Daniel - Leandro - Ludmila - Lucas - Victor";
             this.ResumeLayout(false);
 
         }
