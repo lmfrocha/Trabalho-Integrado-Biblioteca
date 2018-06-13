@@ -1,29 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    class Emprestimo
+    public class Emprestimo
     {
-        private Livro livro;
-        private Usuario usuario;
-        private int tipo;
-        private DateTime data;
+        public Livro Livro { get; set; }
+        public Usuario Usuario { get; set; }
+        public DateTime Data { get; set; }
+        public DateTime DataDevolucao { get; set; }
 
-        public Emprestimo(ref Livro livro, ref Usuario usuario, int tipo, DateTime data)
+        public Emprestimo(Livro livro, Usuario usuario, DateTime data)
         {
             this.Livro = livro;
             this.Usuario = usuario;
-            this.Tipo = tipo;
-            this.Data = data;
+            this.Data = data; 
         }
-
-        public int Tipo { get => tipo; set => tipo = value; }
-        public DateTime Data { get => data; set => data = value; }
-        internal Livro Livro { get => livro; set => livro = value; }
-        internal Usuario Usuario { get => usuario; set => usuario = value; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    class Elemento
+    public class Elemento
     {
         public Dados d;
         public Elemento prox;

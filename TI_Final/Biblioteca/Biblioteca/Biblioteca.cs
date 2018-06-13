@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    class Biblioteca
+    public class Biblioteca
     {
         //Será implementado uma HASH de Estudante
         //Será implementado uma HASH de Livros

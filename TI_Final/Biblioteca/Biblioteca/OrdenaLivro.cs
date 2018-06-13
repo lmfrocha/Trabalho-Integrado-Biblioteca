@@ -1,21 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Biblioteca
 {
     static class OrdenaLivro
     {
-        public static Livro[] quickSort(Livro[] vetor)
+        public static Livro[] QuickSort(Livro[] vetor)
         {
             int inicio = 0;
             int fim = vetor.Length - 1;
-            quickSort(vetor, inicio, fim);
+            QuickSort(vetor, inicio, fim);
             return vetor;
         }
-        private static void quickSort(Livro[] vetor, int inicio, int fim)
+
+        private static void QuickSort(Livro[] vetor, int inicio, int fim)
         {
             if (inicio < fim)
             {
@@ -42,10 +40,55 @@ namespace Biblioteca
                 vetor[inicio] = vetor[f];
                 vetor[f] = pivo;
 
-                quickSort(vetor, inicio, f - 1);
-                quickSort(vetor, f + 1, fim);
-
+                QuickSort(vetor, inicio, f - 1);
+                QuickSort(vetor, f + 1, fim);
             }
+        }
+
+
+        public static Livro[] OrderPorQuantidade(Livro[] vetor)
+        {
+            
+            Livro[] vet = QuickSortquant(vetor);
+            return vet.ToArray();
+        }
+        private static void QuickSortQuant(Livro[] vetor, int inicio, int fim)
+        {
+            if (inicio < fim)
+            {
+                Livro pivo = vetor[inicio];
+                int i = inicio + 1;
+                int f = fim;
+                while (i <= f)
+                {
+                    if (vetor[i].QuantidadeEmprestimo < pivo.QuantidadeEmprestimo)
+                        i++;
+
+                    else if (pivo.QuantidadeEmprestimo < vetor[f].QuantidadeEmprestimo)
+                        f--;
+
+                    else
+                    {
+                        Livro troca = vetor[i];
+                        vetor[i] = vetor[f];
+                        vetor[f] = troca;
+                        i++;
+                        f--;
+                    }
+                }
+                vetor[inicio] = vetor[f];
+                vetor[f] = pivo;
+
+                QuickSortQuant(vetor, inicio, f - 1);
+                QuickSortQuant(vetor, f + 1, fim);
+            }
+        }
+        public static Livro[] QuickSortquant(Livro[] vetor)
+        {
+            int inicio = 0;
+            int fim = vetor.Length - 1;
+            QuickSortQuant(vetor, inicio, fim);
+            return vetor;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    class Lista
+    public class Lista
     {
         public Elemento prim, ult;
 

@@ -8,3 +8,44 @@ E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.cspro
 E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
 E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
 E:\Dev\Fontes\TI_FINAL\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.Cache
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.Form1.resources
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmEmprestimosUsuario.resources
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmLivrosMaisEmprestados.resources
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmSituacaoUsuario.resources
+C:\Users\glaudsonsilva\Desktop\Trabalho-Integrado-Biblioteca-master\TI_Final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmUsuariosComMaisEmprestimos.resources
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.Form1.resources
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmEmprestimosUsuario.resources
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmLivrosMaisEmprestados.resources
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmSituacaoUsuario.resources
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmUsuariosComMaisEmprestimos.resources
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.Cache
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+C:\Users\Victor S.R\Desktop\matérias\matérias 1-2018\AED\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.Form1.resources
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmEmprestimosUsuario.resources
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmLivrosMaisEmprestados.resources
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmSituacaoUsuario.resources
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Forms.FrmUsuariosComMaisEmprestimos.resources
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+C:\Users\Lucas Rocha\Downloads\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb

@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    class Livro: Dados
+    public class Livro : Dados
     {
-        private int codigo;
-        private string nome;
-        private int tipo;
-        private float preco_por_pagina;
-
         public Livro(int codigo, string nome, int tipo, float preco_por_pagina)
         {
             this.Codigo = codigo;
@@ -21,31 +16,32 @@ namespace Biblioteca
             this.Preco_por_pagina = preco_por_pagina;
         }
 
-        public int Codigo { get => codigo; set => codigo = value; }
-        public string Nome { get => nome; set => nome = value; }
-        public int Tipo { get => tipo; set => tipo = value; }
-        public float Preco_por_pagina { get => preco_por_pagina; set => preco_por_pagina = value; }
+        public int Codigo { get; set; }
+        public string Nome { get; set; }
+        public int Tipo { get; set; }
+        public float Preco_por_pagina { get; set; }
 
-        
+        public int QuantidadeEmprestimo { get; set; }
+
         public Boolean Equals(Dados other)
         {
             Livro aux = (Livro)(other);
-            if (this.codigo == aux.Codigo) return true;
+            if (this.Codigo == aux.Codigo) return true;
             else return false;
         }
 
         public int CompareTo(Dados other)
         {
             Livro aux = (Livro)(other);
-            if (this.codigo.Equals(aux.codigo))
+            if (this.Codigo.Equals(aux.Codigo))
             {
                 return 0;
             }
-            else if (this.codigo > aux.codigo)
+            else if (this.Codigo > aux.Codigo)
             {
                 return 1;
             }
-            else if (this.codigo < aux.codigo)
+            else if (this.Codigo < aux.Codigo)
             {
                 return -1;
             }

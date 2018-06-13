@@ -65,24 +65,61 @@
     <Compile Include="Dados.cs" />
     <Compile Include="Elemento.cs" />
     <Compile Include="Emprestimo.cs" />
+    <Compile Include="Operacao.cs" />
+    <Compile Include="Forms\FrmEmprestimosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEmprestimosUsuario.Designer.cs">
+      <DependentUpon>FrmEmprestimosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLivrosMaisEmprestados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLivrosMaisEmprestados.Designer.cs">
+      <DependentUpon>FrmLivrosMaisEmprestados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSituacaoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSituacaoUsuario.Designer.cs">
+      <DependentUpon>FrmSituacaoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUsuariosComMaisEmprestimos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUsuariosComMaisEmprestimos.Designer.cs">
+      <DependentUpon>FrmUsuariosComMaisEmprestimos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hash.cs" />
     <Compile Include="Lista.cs" />
     <Compile Include="OrdenaLivro.cs" />
     <Compile Include="OrdenaUsuario.cs" />
     <Compile Include="PesquisaObjeto.cs" />
     <Compile Include="Usuario.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Livro.cs" />
     <Compile Include="Nodo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmEmprestimosUsuario.resx">
+      <DependentUpon>FrmEmprestimosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLivrosMaisEmprestados.resx">
+      <DependentUpon>FrmLivrosMaisEmprestados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSituacaoUsuario.resx">
+      <DependentUpon>FrmSituacaoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUsuariosComMaisEmprestimos.resx">
+      <DependentUpon>FrmUsuariosComMaisEmprestimos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +149,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="arquivos\emprestimos.txt" />
+    <Content Include="arquivos\livros.txt" />
+    <Content Include="arquivos\usuarios.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

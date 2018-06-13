@@ -1,46 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    class Usuario : Dados
+    public class Usuario : Dados
     {
-        private int codigo;
-        private string nome;
-
         public Usuario(int codigo, string nome)
         {
             this.Codigo = codigo;
             this.Nome = nome;
         }
 
-        public int Codigo { get => codigo; set => codigo = value; }
-        public string Nome { get => nome; set => nome = value; }
-
-
+        public int Codigo { get; set; }
+        public string Nome { get; set; }
+        public int QuantidadeEmprestimo { get; set; }
 
         public Boolean Equals(Dados other)
         {
             Usuario aux = (Usuario)(other);
-            if (this.codigo == aux.Codigo) return true;
+            if (this.Codigo == aux.Codigo) return true;
             else return false;
         }
 
         public int CompareTo(Dados other)
         {
             Usuario aux = (Usuario)(other);
-            if (this.codigo.Equals(aux.codigo))
+            if (this.Codigo.Equals(aux.Codigo))
             {
                 return 0;
             }
-            else if (this.codigo > aux.codigo)
+            else if (this.Codigo > aux.Codigo)
             {
                 return 1;
             }
-            else if (this.codigo < aux.codigo)
+            else if (this.Codigo < aux.Codigo)
             {
                 return -1;
             }
