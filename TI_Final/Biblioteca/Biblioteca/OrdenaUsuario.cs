@@ -8,6 +8,11 @@ namespace Biblioteca
 {
     static class OrdenaUsuario
     {
+    	/// <summary>
+    	/// Médoto para Ordenar um vetor de objetos Usuários por código, do menor para o maior
+    	/// </summary>
+    	/// <param name="vetor">Vetor de objetos do tipo Usuário passado por parametro</param>
+    	/// <returns></returns>
         public static Usuario[] QuickSort(Usuario[] vetor)
         {
             int inicio = 0;
@@ -16,6 +21,12 @@ namespace Biblioteca
             return vetor;
         }
 
+        /// <summary>
+        /// Método Quicksort recursivo
+        /// </summary>
+        /// <param name="vetor">Vetor passado por parametro</param>
+        /// <param name="inicio">Pivo inicial</param>
+        /// <param name="fim">Pivo Final</param>
         private static void QuickSort(Usuario[] vetor, int inicio, int fim)
         {
             if (inicio < fim)
@@ -48,6 +59,11 @@ namespace Biblioteca
 
             }
         }
+        /// <summary>
+        /// Metodo para ordenar contando
+        /// </summary>
+        /// <param name="vetor"></param>
+        /// <returns></returns>
         public static Usuario[] QuickSortQuant(Usuario[] vetor)
         {
             int inicio = 0;
@@ -56,6 +72,12 @@ namespace Biblioteca
             return vetor;
         }
 
+        /// <summary>
+        /// Método quicksort modificado para ordenar contando
+        /// </summary>
+        /// <param name="vetor"></param>
+        /// <param name="inicio"></param>
+        /// <param name="fim"></param>
         private static void QuickSortquant(Usuario[] vetor, int inicio, int fim)
         {
             if (inicio < fim)
@@ -88,6 +110,12 @@ namespace Biblioteca
 
             }
         }
+        
+        /// <summary>
+        /// Método para ordenar por quantidade passando o vetor de usuários.
+        /// </summary>
+        /// <param name="vetUsuarios"></param>
+        /// <returns></returns>
         public  static Usuario[] OrdernarPorQuantidade(Usuario[] vetUsuarios)
         {
             

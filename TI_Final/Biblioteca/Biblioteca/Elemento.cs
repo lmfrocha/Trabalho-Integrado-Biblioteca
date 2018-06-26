@@ -10,6 +10,11 @@ namespace Biblioteca
     {
         public Dados d;
         public Elemento prox;
+        
+        /// <summary>
+        /// Construtor do Objeto Elemento, esta classe serve para acessar os dados internos do objeto
+        /// </summary>
+        /// <param name="dado">Dados do objeto</param>
         public Elemento(Dados dado)
         {
             this.d = dado;

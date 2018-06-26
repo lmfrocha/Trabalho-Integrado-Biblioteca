@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Biblioteca.Arvore" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="1.971344" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Forms.FrmSituacaoUsuario" Collapsed="False">
+    <Position X="0.5" Y="3" Width="2.646061" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Lista" Collapsed="False">
+    <Position X="0.5" Y="6.2" Width="1.278473" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Biblioteca" Collapsed="False">
+    <Position X="0.5" Y="8.4" Width="1.052453" />
+    <Compartments />
+  </Class>
+  <Class Name="Biblioteca.OrdenaLivro" Collapsed="False">
+    <Position X="0.5" Y="9.5" Width="2.266876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Interface Name="Biblioteca.Dados" Collapsed="False">
+    <Position X="0.5" Y="11.4" Width="1.296735" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Interface>
+  <Class Name="Biblioteca.Elemento" Collapsed="False">
+    <Position X="0.5" Y="13" Width="1.536823" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Emprestimo" Collapsed="False">
+    <Position X="0.5" Y="14.8" Width="1.875285" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Forms.FrmEmprestimosUsuario" Collapsed="False">
+    <Position X="0.5" Y="17.2" Width="3.086276" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.OrdenaUsuario" Collapsed="False">
+    <Position X="0.5" Y="20.8" Width="2.266876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.PesquisaObjeto" Collapsed="False">
+    <Position X="0.5" Y="22.8" Width="2.266876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Operacao" Collapsed="False">
+    <Position X="0.5" Y="24.6" Width="1.573346" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Forms.Form1" Collapsed="False">
+    <Position X="0.5" Y="27.7" Width="4.06462" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Usuario" Collapsed="False">
+    <Position X="0.5" Y="34" Width="1.92008" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Forms.FrmUsuariosComMaisEmprestimos" Collapsed="False">
+    <Position X="0.5" Y="36.4" Width="4.157701" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Nodo" Collapsed="False">
+    <Position X="0.5" Y="39.6" Width="1.395646" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Program" Collapsed="False">
+    <Position X="0.5" Y="42.4" Width="2.266876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Forms.FrmLivrosMaisEmprestados" Collapsed="False">
+    <Position X="0.5" Y="43.8" Width="3.401344" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Properties.Resources" Collapsed="False">
+    <Position X="0.5" Y="46.7" Width="2.472174" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Properties.Settings" Collapsed="False">
+    <Position X="0.5" Y="49.2" Width="1.828166" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Biblioteca.Livro" Collapsed="False">
+    <Position X="0.5" Y="50.9" Width="1.92008" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

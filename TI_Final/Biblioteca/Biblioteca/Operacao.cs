@@ -13,6 +13,9 @@ namespace Biblioteca
         private int tipo;
         private DateTime data;
 
+        /// <summary>
+        /// Get and Set Livro
+        /// </summary>
         internal Livro Livro
         {
             get
@@ -26,6 +29,9 @@ namespace Biblioteca
             }
         }
 
+        /// <summary>
+        /// Get and Set Usuário
+        /// </summary>
         internal Usuario Usuario
         {
             get
@@ -39,6 +45,9 @@ namespace Biblioteca
             }
         }
 
+        /// <summary>
+        /// Get and Set Tipo
+        /// </summary>
         public int Tipo
         {
             get
@@ -52,6 +61,9 @@ namespace Biblioteca
             }
         }
 
+        /// <summary>
+        /// Get and Set Data
+        /// </summary>
         public DateTime Data
         {
             get
@@ -65,6 +77,13 @@ namespace Biblioteca
             }
         }
 
+        /// <summary>
+        /// Construtor padrão do Livro, utilizando Referencia aos objetos já existentes na memória do programa
+        /// </summary>
+        /// <param name="livro">Referencia de livro que veio do vetor de livros</param>
+        /// <param name="usuario">Referencia de usuário que veio do vetor de usuário</param>
+        /// <param name="tipo">tipo de livro que vem do vetor de emprestimos</param>
+        /// <param name="data">data que vem para controlar se o usuario está regular ou suspenso</param>
         public Operacao(ref Livro livro, ref Usuario usuario, int tipo, DateTime data)
         {
             this.Livro = livro;
@@ -72,10 +91,6 @@ namespace Biblioteca
             this.Tipo = tipo;
             this.Data = data;
         }
-
-        //public int Tipo { get => tipo; set => tipo = value; }
-        //public DateTime Data { get => data; set => data = value; }
-        //internal Livro Livro { get => livro; set => livro = value; }
-        //internal Usuario Usuario { get => usuario; set => usuario = value; }
+        
     }
 }

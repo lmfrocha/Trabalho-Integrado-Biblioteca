@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -60,8 +60,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arvore.cs" />
-    <Compile Include="Biblioteca.cs" />
     <Compile Include="Dados.cs" />
     <Compile Include="Elemento.cs" />
     <Compile Include="Emprestimo.cs" />
@@ -90,8 +88,6 @@
     <Compile Include="Forms\FrmUsuariosComMaisEmprestimos.Designer.cs">
       <DependentUpon>FrmUsuariosComMaisEmprestimos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hash.cs" />
-    <Compile Include="Lista.cs" />
     <Compile Include="OrdenaLivro.cs" />
     <Compile Include="OrdenaUsuario.cs" />
     <Compile Include="PesquisaObjeto.cs" />
@@ -103,7 +99,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Livro.cs" />
-    <Compile Include="Nodo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
@@ -154,6 +149,7 @@
     <Content Include="arquivos\emprestimos.txt" />
     <Content Include="arquivos\livros.txt" />
     <Content Include="arquivos\usuarios.txt" />
+    <Content Include="Biblioteca.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
